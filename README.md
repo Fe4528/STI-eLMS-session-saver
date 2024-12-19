@@ -2,7 +2,7 @@
 Browser extension for STI's eLMS website.
 
 # Installing
-1. Download the zip file and extract it somewhere (e.g Documents folder in Windows)
+1. Download the [zip file](https://github.com/Fe4528/STI-eLMS-session-saver/archive/refs/heads/main.zip) and extract it somewhere (e.g Documents folder in Windows)
 2. Go to chrome://extensions and click "Load unpacked"
 
 ![load unpacked image](https://ironworks.neocities.org/assets/elms-install1.png)
