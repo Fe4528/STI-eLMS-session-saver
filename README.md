@@ -15,7 +15,7 @@ Select the folder of the extension
 You should see the extension ready to use.
 
 # Usage
-Before obtaining the ability to auto log-in, you must login to your STI eLMS account.
+Before obtaining the ability to auto log-in, you must login to your STI eLMS account first.
 In your eLMS home page, open the extension by clicking the jigsaw icon at the top right of your screen.
 
 ![jigsaw img](https://ironworks.neocities.org/assets/elms-usage1.png)
