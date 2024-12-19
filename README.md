@@ -2,16 +2,17 @@
 Browser extension for STI's eLMS website.
 
 # Installing
-1. Download the [zip file](https://github.com/Fe4528/STI-eLMS-session-saver/archive/refs/heads/main.zip) and extract it somewhere (e.g. Documents folder in Windows)
-2. Go to chrome://extensions and click "Load unpacked"
+Download the [zip file](https://github.com/Fe4528/STI-eLMS-session-saver/archive/refs/heads/main.zip) and extract it somewhere (e.g. Documents folder in Windows)
+
+Go to chrome://extensions and click "Load unpacked"
 
 ![load unpacked image](https://ironworks.neocities.org/assets/elms-install1.png)
 
-3. Select the folder of the extension
+Select the folder of the extension
 
 ![select folder image](https://ironworks.neocities.org/assets/elms-install2.png)
 
-4. You should see the extension ready to use.
+You should see the extension ready to use.
 
 # Usage
 Before obtaining the ability to auto log-in, you must login to your STI eLMS account.
