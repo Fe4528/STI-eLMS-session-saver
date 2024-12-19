@@ -1,0 +1,18 @@
+{
+    "name": "STI eLMS session saver",
+    "description": "STI eLMS session saver. No need to login multiple times",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "main.html"  
+    },
+    "host_permissions": [
+        "https://elms.sti.edu/*"
+    ],
+    "permissions": [
+        "cookies"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

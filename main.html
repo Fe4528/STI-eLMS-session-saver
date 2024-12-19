@@ -1,0 +1,69 @@
+<!-- STI College Tanay -->
+
+<html>
+    <head>
+        <style>
+            body {
+                min-width: 400px;
+                background-color: #01579b;
+                color: white;
+                font-family: 'RobotoLightNew', Helvetica, Arial, sans-serif;
+            }
+
+            #currentuser-p {
+                text-align: center;
+            }
+
+            #main-page-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .control-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .control-button {
+                margin: 6px;
+            }
+        </style>
+        <script src="behaviour.js" defer></script>
+    </head>
+    <body>
+        <div id="heading-div">
+            <h2 id="currentuser-p">Current User: None</h2>
+        </div>
+        <div id="main-page">
+             <!-- shows up if no account set -->
+              <div id="main-page-container">
+                <button id="main-page-button">Click here to set an account!</button>
+              </div>
+        </div>
+        <!-- control page -->
+        <div id="control-page">
+            <div class="control-div">
+                <h4>Note: Does not work on Incognito!</h4>
+                <button id="auto-login-button" class="control-button">Auto Log-in</button>
+                <button id="remove-data-button" class="control-button">Log out</button>
+            </div>
+        </div>
+        <!-- user creation -->
+        <div id="user-creation-page">
+            <h3 style="text-align: center;">Set or override account info</h3>
+            <p style="text-align: center;">Note: Log-in on eLMS first!</p>
+            <div class="control-div">
+                <form>
+                    <label for="creation-page-name-input">Name</label>
+                    <input name="creation-page-name-input" type="text" id="creation-page-name-input" autocomplete="off">
+                </form>
+                <button id="user-creation-submit" style="margin: 5px;">submit</button>
+                <button id="user-creation-cancel" style="margin: 5px;" class="back-callback">cancel</button>
+            </div>
+        </div>
+    </body>
+</html>
