@@ -1,12 +1,11 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	switch (message.action) {
-		case "getCookie":
-			chrome.cookies.get({
-                url: message.url,
-                name: message.name 
-            }, (cookie) => {
-                if (chrome.runtime.lastError) { return console.error(chrome.runtime.lastError) }
-                sendResponse(cookie.value || null)
+		case "getCookie":chrome.cookies.get({
+			url: message.url,
+			name: message.name 
+	        }, (cookie) => {
+				if (chrome.runtime.lastError) { return console.error(chrome.runtime.lastError) }
+				sendResponse(cookie.value || null)
 			})
         break;
 
