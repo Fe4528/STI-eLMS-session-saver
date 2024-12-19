@@ -32,6 +32,6 @@ Click on the button and enter the name of the account (this is just for identify
 
 ![acc config page](https://ironworks.neocities.org/assets/elms-usage4.png)
 
-Now when you are logged out of eLMS again, you can open the extension popup, and press "Auto Log-in" to automatically login on your account, without having to use 2FA (2 factor authentication)
+Now when you are logged out of eLMS again, you can open the extension popup, press "Auto Log-in" and refresh the page to automatically login on your account, without having to use 2FA (2 factor authentication)
 
 ![image1](https://ironworks.neocities.org/assets/elms-usage5.png)
