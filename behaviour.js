@@ -25,7 +25,7 @@ document.getElementById("user-creation-submit").onclick = () => {
 document.getElementById("auto-login-button").onclick = async () => {
     await removeCookie("secure_lmssessionkey2")
     // remove first because it doesn't ovverride current cookie for some reason
-    
+
     await setCookie("secure_lmssessionkey2", localStorage.getItem("eLMS_Session").split(">>>")[1])
     // second item in array is the session key
 }
@@ -114,7 +114,7 @@ async function setCookie(cookie_name, val) {
         chrome.runtime.sendMessage({
             action: "setCookie",
             url: "https://elms.sti.edu/",
-            domain: ".sti.edu",
+            domain: "elms.sti.edu",
             name: cookie_name,
             value: val,
         }, (response) => {
@@ -128,7 +128,7 @@ async function removeCookie(cookie_name) {
         chrome.runtime.sendMessage({
             action: "removeCookie",
             url: "https://elms.sti.edu/",
-            domain: ".sti.edu",
+            domain: "elms.sti.edu",
             name: cookie_name,
         }, (response) => {
             resolve(response)
