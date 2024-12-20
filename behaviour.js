@@ -28,6 +28,8 @@ document.getElementById("auto-login-button").onclick = async () => {
 
     await setCookie("secure_lmssessionkey2", localStorage.getItem("eLMS_Session").split(">>>")[1])
     // second item in array is the session key
+
+    alert("Logged in. Please refresh the page to confirm")
 }
 
 document.getElementById("remove-data-button").onclick = () => {
