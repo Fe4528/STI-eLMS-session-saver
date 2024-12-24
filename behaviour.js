@@ -1,5 +1,4 @@
 let page_history = []
-let current_user;
 let pages = {
     1: document.getElementById("main-page"),
     2: document.getElementById("control-page"),
