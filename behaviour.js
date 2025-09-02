@@ -58,7 +58,7 @@ function setCurrentUserLabel() {
 }
 
 async function saveData(data) {
-    let cookie_val = await getCookie("secure_lmssessionkey2")
+    let cookie_val = await getCookie("lms_session_v1")
     setUser(data, cookie_val)
     setPage(2)
 }
@@ -136,4 +136,5 @@ async function removeCookie(cookie_name) {
         })
     })
 }
+
 
