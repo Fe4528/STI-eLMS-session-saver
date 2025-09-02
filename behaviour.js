@@ -22,10 +22,10 @@ document.getElementById("user-creation-submit").onclick = () => {
 }
 
 document.getElementById("auto-login-button").onclick = async () => {
-    await removeCookie("secure_lmssessionkey2")
+    // await removeCookie("secure_lmssessionkey2")
     // remove first because it doesn't ovverride current cookie for some reason
 
-    await setCookie("secure_lmssessionkey2", localStorage.getItem("eLMS_Session").split(">>>")[1])
+    await setCookie("lms_session_v1", localStorage.getItem("eLMS_Session").split(">>>")[1])
     // second item in array is the session key
 
     alert("Logged in. Please refresh the page to confirm")
@@ -136,3 +136,4 @@ async function removeCookie(cookie_name) {
         })
     })
 }
+
